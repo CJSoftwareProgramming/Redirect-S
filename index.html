@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirección a WhatsApp</title>
+  <script>
+    window.onload = function () {
+      const numeros = [
+        "573126517005",
+        "584241880627"
+      ];
+      const numeroAleatorio = numeros[Math.floor(Math.random() * numeros.length)];
+      const mensaje = "Hola 👋 vengo de tiktok, quiero ser streamer";
+      window.location.href = `https://wa.me/${numeroAleatorio}?text=${encodeURIComponent(mensaje)}`;
+    };
+  </script>
+</head>
+<body>
+  <p>Redirigiendo a WhatsApp...</p>
+</body>
+</html>
